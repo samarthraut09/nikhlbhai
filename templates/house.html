@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+
+  
+</head>
+
+
+<style>
+  .bg {
+/* The image used */
+background-image: url("https://cdn.pixabay.com/photo/2017/09/02/19/26/norway-2708286_960_720.jpg");
+
+/* Full height */
+height: 100%; 
+
+/* Center and scale the image nicely */
+background-position: cover;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.center {
+  margin:auto;
+  width: 50%;
+  border: none;
+  padding: 5px;
+        }
+
+        .button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+</style>
+
+<body>
+  <div class="bg">
+   <div class="center">
+    <h1  style="text-align:Center" ;>Welcome to House Price Prediction </h1>
+    <h2  style="text-align:Center" ;>About House Price Prediction </h2>
+    <p style="text-align:Center">Real-estate house pricing in current scenarios is a major headache when it comes<br>
+                                 to new or even old buyers. Based on several items like – the area where the house<br>
+                                 is, decoration, construction etc. the price varies significantly. Therefore when<br>
+                                 a customer’s budget and expectation matches with the price then a deal takes place<br>
+                                quickly. And often times it is really hard to predict the price considering all these<br>
+                                 ever-changing features.</p>
+    <h3  style="text-align:center" ;> Provide the  Details </h3>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <table class="center">
+          <tr>
+            <td>  CRIM :</td>
+            <td><input type="text" name="CRIM" placeholder="CRIM" required="required" /><br></td>
+          </tr>
+        
+          <tr>
+            <td>  ZN :</td>
+            <td><input  type="text" name="ZN" placeholder="ZN" required="required" /><br></td>
+          </tr>
+
+          <tr>
+            <td>  INDUS :</td>
+            <td><input  type="text" name="INDUS" placeholder="INDUS" required="required" /><br></td>
+          </tr>
+
+          <tr>
+            <td>  CHAS :</td>
+            <td><input  type="text" name="CHAS" placeholder="CHAS" required="required" /><br></td>
+          </tr>
+
+          <tr>
+            <td>  NOX :</td>
+            <td><input  type="text" name="NOX" placeholder="NOX" required="required" /><br></td>
+          </tr>
+          
+          <tr>
+            <td>  RM :</td>
+            <td><input  type="text" name="RM" placeholder="RM" required="required" /><br></td>
+          </tr>
+
+          <tr>
+            <td>  AGE :</td>
+            <td><input  type="text" name="AGE" placeholder="AGE" required="required" /><br></td>
+          </tr>
+        
+          <tr>
+            <td>  DIS :</td>
+            <td><input  type="text" name="DIS" placeholder="DIS" required="required" /><br></td>
+          </tr>
+
+          <tr>
+            <td>  RAD :</td>
+            <td><input  type="text" name="RAD" placeholder="RAD" required="required" /><br></td>
+          </tr>
+
+          <tr>
+            <td>  TAX :</td>
+            <td><input  type="text" name="TAX" placeholder="TAX" required="required" /><br></td>
+          </tr>
+
+          <tr>
+            <td>  PTRATIO :</td>
+            <td><input  type="text" name="PTRATIO" placeholder="PTRATIO" required="required" /><br></td>
+          </tr>
+          
+          <tr>
+            <td>  B :</td>
+            <td><input type="text" name="B" placeholder="B" required="required" /><br></td>
+          </tr>
+
+          <tr>
+            <td>  LSTAT :</td>
+            <td><input  type="text" name="LSTAT" placeholder="LSTAT" required="required" /><br></td>
+          </tr>
+       
+          
+            
+          
+        
+      </table>
+
+      <p style="text-align:center" ;><button type="submit" class="button button1" >Predict</button></p>
+   
+    
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   
+   
+  
+   
+   
+ 
+
+ <!-- <h3  style="text-align:Center";>{{prediction_text}}</h3> -->
+
+</form>
+ </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!Doctype html>
+<html>
+<head> <title> Rohit shukla </title> </head>
+<body>
+
+<h1>Medical insurance price prediction</h3>
+
+<form>
+
+Name:<p>
+<input type "text" placeholder = "Enter Your Name"> <br><p>
+
+Age:<p>
+
+<input type "text" placeholder = "Enter Your Age"> <br><p>
+
+Gender:<p>
+
+<input type = "radio" name = "gender">Female
+<input type = "radio" name = "gender">Male <br><p>
+
+BMI:<p>
+
+<input type "text" placeholder = "Enter Your BMI Number"> <br><p>
+
+Children:<p>
+
+<input type "text" placeholder = "Enter Your Children number"> <br><p>
+
+Smoker:<p>
+<input type = "radio" name = "Smoker">Yes
+<input type = "radio" name = "Smoker">No <br><p>
+
+Region:<p>
+
+<input type = "radio" name = "Region">Region_Northeast
+<input type = "radio" name = "Region">Region_Northwest
+<input type = "radio" name = "Region">Region_Southeast
+<input type = "radio" name = "Region">Region_Southeast<br><p>
+
+
+<button type="Submit">Submit</button>
+
+
+
+
+</form>
+
+
+</body>
+</html>
